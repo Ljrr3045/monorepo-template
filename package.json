@@ -1,0 +1,15 @@
+{
+    "name": "monorepo-template",
+    "version": "1.0.0",
+    "private": false,
+    "description": "Monorepo template by Ljrr3045",
+    "license": "ISC",
+    "scripts": {
+        "bootstrap": "npm install && npm run install:pkgs",
+        "clean": "lerna exec rm -- -rf node_modules",
+        "install:pkgs": "lerna exec npm install -- --also=dev"
+    },
+    "dependencies": {
+        "lerna": "5.3.0"
+    }
+}
